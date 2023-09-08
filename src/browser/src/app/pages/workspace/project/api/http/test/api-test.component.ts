@@ -131,6 +131,10 @@ export class ApiTestComponent implements EditTabViewComponent {
   delete() {
     this.instance.delete();
   }
+  toggleNameEdit() {
+    this.name = this.model.request.name;
+    this.isNameEdit = !this.isNameEdit;
+  }
   saveName() {
     this.instance.saveName();
   }

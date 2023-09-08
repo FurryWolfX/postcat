@@ -17,7 +17,7 @@
         </nz-form-control>
         <ng-container *ngIf="!isNameEdit">
           <h5 nz-typography class="!mb-[0px]">{{ model.request.name }}</h5>
-          <button nzSize="small" (click)="isNameEdit = !isNameEdit" eo-ng-button nzType="text" class="ml-[5px]">
+          <button nzSize="small" (click)="toggleNameEdit()" eo-ng-button nzType="text" class="ml-[5px]">
             <eo-iconpark-icon size="12px" name="edit"></eo-iconpark-icon>
           </button>
           <button nzSize="small" (click)="delete()" eo-ng-button nzType="text" class="ml-[5px]">
