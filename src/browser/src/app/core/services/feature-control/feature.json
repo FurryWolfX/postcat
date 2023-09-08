@@ -1,5 +1,5 @@
 {
-  "cloudFeature": true,
+  "cloudFeature": false,
   "apimanage.test": true,
   "apimanage.document": true,
   "apimanage.edit": true,

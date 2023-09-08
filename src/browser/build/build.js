@@ -75,7 +75,7 @@ class PlatformBuilder {
     let buildConfigJson = require('../angular.json');
     buildConfigJson = this.instance.resetBuildConfig(buildConfigJson);
     let that = this;
-    fs.writeFile('./angular.json', JSON.stringify(buildConfigJson), function (err) {
+    fs.writeFile('./angular.json', JSON.stringify(buildConfigJson, null, 2), function (err) {
       if (err) {
         console.error('build/beforeBuild.js:', err);
       }

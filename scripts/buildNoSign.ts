@@ -40,7 +40,7 @@ const config: Configuration = {
   ...ELECTRON_BUILD_CONFIG,
   win: {
     icon: 'src/app/common/images/logo.ico',
-    target: ['nsis', 'portable']
+    target: ['dir']
   }
 };
 
